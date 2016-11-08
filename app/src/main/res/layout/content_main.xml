@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cn.studyjams.s1.sj65.xiangchao.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/soccer"
+                style="@style/BG"
+                android:onClick="onSoccer"
+                android:text="@string/soccer" />
+
+            <Button
+                android:id="@+id/basketball"
+                style="@style/BG"
+                android:onClick="onBasketball"
+                android:text="@string/basketball" />
+
+            <Button
+                android:id="@+id/tableTennis"
+                style="@style/BG"
+                android:onClick="onTable"
+                android:text="@string/table_tennis" />
+
+            <Button
+                android:id="@+id/badminton"
+                style="@style/BG"
+                android:onClick="onBadminton"
+                android:text="@string/badminton" />
+            <Button
+                style="@style/BG"
+                android:onClick="onVolleyball"
+                android:text="@string/volleyball" />
+
+            <!--<RelativeLayout style="@style/BG">-->
+
+            <!--<TextView-->
+            <!--style="@style/MainHeader"-->
+            <!--android:text="Basketball" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout style="@style/BG">-->
+
+            <!--<TextView-->
+            <!--style="@style/MainHeader"-->
+            <!--android:text="Soccer" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout style="@style/BG">-->
+
+            <!--<TextView-->
+            <!--style="@style/MainHeader"-->
+            <!--android:text="Basketball" />-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

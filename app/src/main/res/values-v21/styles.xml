@@ -1,0 +1,56 @@
+<resources>
+    <style name="SoccerTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryDark">#00695C</item>
+        <item name="colorAccent">#43A047</item>
+        <item name="colorButtonNormal">#81C784</item>
+        <item name="android:navigationBarColor">#004D40</item>
+        <item name="android:windowBackground">@color/back1</item>
+    </style>
+
+    <style name="AppTheme" parent="SoccerTheme">
+        <!--Customize your theme here. -->
+        <item name="colorPrimary">#0288D1</item>
+        <item name="colorPrimaryDark">#607D8B</item>
+        <!--  <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">#0277BD</item>
+        <item name="colorButtonNormal">#00BCD4</item>
+        <item name="android:navigationBarColor">#01579B</item>
+        <item name="android:windowBackground">@color/back2</item>
+    </style>
+
+    <style name="BasketballTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#F57C00</item>
+        <item name="colorPrimaryDark">#B71C1C</item>
+        <item name="colorAccent">#F57F17</item>
+        <item name="colorButtonNormal">#FFA726</item>
+        <item name="android:navigationBarColor">#BF360C</item>
+        <item name="android:windowBackground">@color/back3</item>
+    </style>
+
+    <style name="BadmintonTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#673AB7</item>
+        <item name="colorPrimaryDark">#4A148C</item>
+        <item name="colorAccent">#6200EA</item>
+        <item name="colorButtonNormal">#9575CD</item>
+        <item name="android:navigationBarColor">#311B92</item>
+        <item name="android:windowBackground">@color/back4</item>
+    </style>
+
+    <style name="TableTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#3949AB</item>
+        <item name="colorPrimaryDark">#0D47A1</item>
+        <item name="colorAccent">#0277BD</item>
+        <item name="colorButtonNormal">#00BCD4</item>
+        <item name="android:navigationBarColor">#1A237E</item>
+        <item name="android:windowBackground">@color/back5</item>
+    </style>
+    <style name="VolleyballTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#2E7D32</item>
+        <item name="colorPrimaryDark">#004D40</item>
+        <item name="colorAccent">#33691E</item>
+        <item name="colorButtonNormal">#AED581</item>
+        <item name="android:navigationBarColor">#33691E</item>
+        <item name="android:windowBackground">@color/back6</item>
+    </style>
+</resources>

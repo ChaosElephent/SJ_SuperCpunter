@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/table_tennis"
+                android:textColor="#1A237E"
+                android:layout_margin="8dp"
+                android:textSize="48dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:id="@+id/top_table_tennis"
+                android:layout_margin="8dp"
+                android:background="@drawable/corners_bg"
+                android:layout_gravity="center"
+                android:src="@drawable/table_tennis"
+                android:scaleType="centerCrop"/>
+            <Button
+                style="@style/Bottom"
+                android:text="@string/rule"
+                android:id="@+id/introduction_of_rule"
+                android:onClick="introduceTab"/>
+            <Button
+                style="@style/Bottom"
+                android:text="@string/scoring"
+                android:id="@+id/begin_scoring"
+                android:onClick="scoreTab"/>
+            <!--<Button-->
+                <!--style="@style/Bottom"-->
+                <!--android:text="@string/main_manu"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:textSize="16dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:id="@+id/main_manu"-->
+                <!--android:onClick="onBackTab"/>-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
