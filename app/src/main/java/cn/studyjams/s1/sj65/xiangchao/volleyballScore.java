@@ -11,7 +11,7 @@ import android.widget.Toast;
 /**
  * Created by C on 2016/4/30.
  */
-public class volleyballScore extends AppCompatActivity {
+public class VolleyballScore extends AppCompatActivity {
     int scoreA = 0;
     int scoreB = 0;
     int bigScoreA = 0;
@@ -79,7 +79,7 @@ public class volleyballScore extends AppCompatActivity {
             }
         }
         if (scoreA == scoreB) {
-            Toast.makeText(volleyballScore.this,
+            Toast.makeText(VolleyballScore.this,
                     getString(R.string.draw), Toast.LENGTH_SHORT).show();
         }
 
@@ -101,10 +101,10 @@ public class volleyballScore extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.competition_results));
 
         if (intent.resolveActivity(getPackageManager()) != null) {
-            Toast.makeText(volleyballScore.this, getString(R.string.open_mail), Toast.LENGTH_SHORT).show();
+            Toast.makeText(VolleyballScore.this, getString(R.string.open_mail), Toast.LENGTH_SHORT).show();
             startActivity(intent);
         } else {
-            Toast.makeText(volleyballScore.this, getString(R.string.open_error), Toast.LENGTH_SHORT).show();
+            Toast.makeText(VolleyballScore.this, getString(R.string.open_error), Toast.LENGTH_SHORT).show();
         }
     }
 }

@@ -38,7 +38,7 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/TableTheme"></activity>
         <activity
-            android:name=".volleyballMain"
+            android:name=".VolleyballMain"
             android:label="@string/volleyball"
             android:parentActivityName=".MainActivity"
             android:theme="@style/VolleyballTheme"></activity>
@@ -63,9 +63,9 @@
             android:parentActivityName=".TableMain"
             android:theme="@style/TableTheme"></activity>
         <activity
-            android:name=".volleyballScore"
+            android:name=".VolleyballScore"
             android:label="@string/volleyball"
-            android:parentActivityName=".volleyballMain"
+            android:parentActivityName=".VolleyballMain"
             android:theme="@style/VolleyballTheme"></activity>
         <activity
             android:name=".BadmintonInt"
@@ -88,12 +88,14 @@
             android:parentActivityName=".TableMain"
             android:theme="@style/TableTheme"></activity>
         <activity
-            android:name=".volleyballInt"
+            android:name=".VolleyballInt"
             android:label="@string/volleyball"
-            android:parentActivityName=".volleyballMain"
+            android:parentActivityName=".VolleyballMain"
             android:theme="@style/VolleyballTheme"></activity>
-
-
+        <activity
+            android:name=".Login"
+            android:label="@string/login"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

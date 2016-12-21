@@ -47,28 +47,6 @@
                 style="@style/BG"
                 android:onClick="onVolleyball"
                 android:text="@string/volleyball" />
-
-            <!--<RelativeLayout style="@style/BG">-->
-
-            <!--<TextView-->
-            <!--style="@style/MainHeader"-->
-            <!--android:text="Basketball" />-->
-            <!--</RelativeLayout>-->
-
-            <!--<RelativeLayout style="@style/BG">-->
-
-            <!--<TextView-->
-            <!--style="@style/MainHeader"-->
-            <!--android:text="Soccer" />-->
-            <!--</RelativeLayout>-->
-
-            <!--<RelativeLayout style="@style/BG">-->
-
-            <!--<TextView-->
-            <!--style="@style/MainHeader"-->
-            <!--android:text="Basketball" />-->
-            <!--</RelativeLayout>-->
         </LinearLayout>
-
     </ScrollView>
 </RelativeLayout>
