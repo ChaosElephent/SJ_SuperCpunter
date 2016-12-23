@@ -8,16 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
-
-    private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthListener;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,47 +17,48 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        if (user != null) {
-            Toast.makeText(MainActivity.this, user.getUid() + " Login successfully", Toast.LENGTH_LONG).show();
-        } else {
-            Toast.makeText(MainActivity.this, "Login fail", Toast.LENGTH_LONG).show();
-        }
-//        mAuthListener = new FirebaseAuth.AuthStateListener(){
-//            @Override
-//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth){
-//                FirebaseUser user = firebaseAuth.getCurrentUser();
-//                if (user != null){
-//                    Toast.makeText(MainActivity.this, user.getUid()+" Login successfully", Toast.LENGTH_LONG).show();
-//                }else{
-//                    Toast.makeText(MainActivity.this, "Login fail", Toast.LENGTH_LONG).show();
-//                }
-//            }
-//        };
-
-
 
 
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        MenuItem login = menu.findItem(R.id.action_login);
+        MenuItem logout = menu.findItem(R.id.action_logout);
+
+        if (Account.checkLoginState()) {
+            logout.setVisible(true);
+            login.setVisible(false);
+        } else {
+            login.setVisible(true);
+            logout.setVisible(false);
+        }
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case R.id.action_login:
+                startActivity(new Intent(getApplicationContext(), Account.class));
+                break;
+            case R.id.action_logout:
+                Account.logout();
+                break;
+            case R.id.action_settings:
+                break;
+            case R.id.action_quit:
+                android.os.Process.killProcess(android.os.Process.myPid());
+                break;
+            default:
+                break;
         }
+
 
         return super.onOptionsItemSelected(item);
     }

@@ -12,16 +12,18 @@ import android.widget.Toast;
  * Created by C on 2016/4/29.
  */
 public class SoccerScore extends AppCompatActivity {
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.soccer_score);
-    }
     int scoreA=0;
     int scoreB=0;
     int bigScoreA=0;
     int bigScoreB=0;
     String smallPoint="";
     String bigPoint="";
+
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.soccer_score);
+    }
+
     public void displayBigPointSoc(int bigScoreA,int bigScoreB){
         TextView scoreView =(TextView) findViewById(R.id.big_point_soc);
         bigPoint=bigScoreA+":"+bigScoreB;
@@ -35,7 +37,8 @@ public class SoccerScore extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_scoreA_soc);
         scoreView.setText(String.valueOf(score));
     }
-    public  void displaySmallpointSoc(int scoreA,int scoreB){
+
+    public void displaySmallpointSoc(int scoreA, int scoreB) {
         TextView scoreView = (TextView) findViewById(R.id.small_point_soc);
         smallPoint += scoreA+":"+scoreB+"\n";
         scoreView.setText(smallPoint);
