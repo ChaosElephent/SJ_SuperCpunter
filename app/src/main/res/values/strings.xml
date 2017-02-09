@@ -39,6 +39,11 @@
     <string name="net_error">Network error</string>
     <string name="invalid_password">Passwords input are different</string>
     <string name="invalid_email">Invalid email address</string>
+    <string name="reguster_success">Regustered successfully</string>
+    <string name="signout_success">Signout successfully</string>
+    <string name="auth_success">Login success</string>
+    <string name="wait_login">Logging in</string>
+    <string name="please_wait">Please wait...</string>
 
 
 </resources>

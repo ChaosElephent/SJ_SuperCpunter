@@ -46,7 +46,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="accountLogin"
                 android:text="@string/login" />
 
             <Button
@@ -55,7 +54,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="accountRegister"
                 android:text="@string/sign_up" />
         </LinearLayout>
 

@@ -34,8 +34,10 @@ public class Register extends Account {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 Log.d("Account", "createUserWithEmail: onComplete:" + task.isSuccessful());
                                 if (!task.isSuccessful()) {
-                                    Toast.makeText(Register.this, getString(R.string.net_error)
-                                            , Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Register.this, getString(R.string.net_error), Toast.LENGTH_SHORT).show();
+                                    Register.this.finish();
+                                } else {
+                                    Toast.makeText(Register.this, getString(R.string.reguster_success), Toast.LENGTH_SHORT).show();
                                     Register.this.finish();
                                 }
                             }

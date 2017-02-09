@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,9 +25,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        super.onPrepareOptionsMenu(menu);
         MenuItem login = menu.findItem(R.id.action_login);
         MenuItem logout = menu.findItem(R.id.action_logout);
-
         if (Account.checkLoginState()) {
             logout.setVisible(true);
             login.setVisible(false);
@@ -49,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.action_logout:
                 Account.logout();
+                Toast.makeText(MainActivity.this, getString(R.string.signout_success), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.action_settings:
                 break;
