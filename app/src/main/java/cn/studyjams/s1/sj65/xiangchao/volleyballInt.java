@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 /**
  * Created by C on 2016/4/30.
  */
-public class volleyballInt extends AppCompatActivity {
+public class VolleyballInt extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.volleyball_int);

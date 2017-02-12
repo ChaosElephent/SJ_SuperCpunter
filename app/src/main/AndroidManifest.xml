@@ -21,12 +21,12 @@
             android:name=".SoccerMain"
             android:label="@string/soccer"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/SoccerTheme"></activity>
+            android:theme="@style/SoccerTheme" />
         <activity
             android:name=".BasketballMain"
             android:label="@string/basketball"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/BasketballTheme"></activity>
+            android:theme="@style/BasketballTheme" />
         <activity
             android:name=".BadmintonMain"
             android:label="@string/badminton"
@@ -36,64 +36,71 @@
             android:name=".TableMain"
             android:label="@string/table_tennis"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/TableTheme"></activity>
+            android:theme="@style/TableTheme" />
         <activity
-            android:name=".volleyballMain"
+            android:name=".VolleyballMain"
             android:label="@string/volleyball"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/VolleyballTheme"></activity>
+            android:theme="@style/VolleyballTheme" />
         <activity
             android:name=".BadmintonScore"
             android:label="@string/badminton"
             android:parentActivityName=".BadmintonMain"
-            android:theme="@style/BadmintonTheme"></activity>
+            android:theme="@style/BadmintonTheme" />
         <activity
             android:name=".BasketballScore"
             android:label="@string/basketball"
             android:parentActivityName=".BasketballMain"
-            android:theme="@style/BasketballTheme"></activity>
+            android:theme="@style/BasketballTheme" />
         <activity
             android:name=".SoccerScore"
             android:label="@string/soccer"
             android:parentActivityName=".SoccerMain"
-            android:theme="@style/SoccerTheme"></activity>
+            android:theme="@style/SoccerTheme" />
         <activity
             android:name=".TableScore"
             android:label="@string/table_tennis"
             android:parentActivityName=".TableMain"
-            android:theme="@style/TableTheme"></activity>
+            android:theme="@style/TableTheme" />
         <activity
-            android:name=".volleyballScore"
+            android:name=".VolleyballScore"
             android:label="@string/volleyball"
-            android:parentActivityName=".volleyballMain"
-            android:theme="@style/VolleyballTheme"></activity>
+            android:parentActivityName=".VolleyballMain"
+            android:theme="@style/VolleyballTheme" />
         <activity
             android:name=".BadmintonInt"
             android:label="@string/badminton"
             android:parentActivityName=".BadmintonMain"
-            android:theme="@style/BadmintonTheme"></activity>
+            android:theme="@style/BadmintonTheme" />
         <activity
             android:name=".BasketballInt"
             android:label="@string/basketball"
             android:parentActivityName=".BasketballMain"
-            android:theme="@style/BasketballTheme"></activity>
+            android:theme="@style/BasketballTheme" />
         <activity
             android:name=".SoccerInt"
             android:label="@string/soccer"
             android:parentActivityName=".SoccerMain"
-            android:theme="@style/SoccerTheme"></activity>
+            android:theme="@style/SoccerTheme" />
         <activity
             android:name=".TableInt"
             android:label="@string/table_tennis"
             android:parentActivityName=".TableMain"
-            android:theme="@style/TableTheme"></activity>
+            android:theme="@style/TableTheme" />
         <activity
-            android:name=".volleyballInt"
+            android:name=".VolleyballInt"
             android:label="@string/volleyball"
-            android:parentActivityName=".volleyballMain"
-            android:theme="@style/VolleyballTheme"></activity>
-
-
+            android:parentActivityName=".VolleyballMain"
+            android:theme="@style/VolleyballTheme" />
+        <activity
+            android:name=".Account"
+            android:label="@string/login"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Register"
+            android:label="@string/sign_up"
+            android:parentActivityName=".Account"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

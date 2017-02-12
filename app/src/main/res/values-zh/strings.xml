@@ -27,5 +27,22 @@
     <string name="volleyball">排球</string>
     <string name="volleyball_int">排球是一项团队运动，其中的六名球员两支球队是由隔网。每队试图通过下组织的规则接地对其他球队的球场球得分。[1]它一直是自1964年夏季奥运会的官方计划的一部分。  完整的规则是广泛的。但是，简单地说，游戏过程如下：在球队之一，玩家通过服务球（辗转反侧或释放它，然后打它用一只手或手臂），从后场边界线后开始了“反弹”，过网，并进入接收球队的球场。接收团队必须不能让球被自己的球场内接地。该团队可能触球最多3次，但个别球员可能不会碰球的两届。通常情况下，前两个触摸被用于设置为攻击，企图直接回球过网以这样一种方式，所述服务小组无法防止它在其法院被接地。  拉力赛继续进行，每队允许多达三个连续的触动，直到（1）：一个团队做一杀，接地对手的球场球，赢得了反弹; （2）：一个团队犯下的错，失去了集会。获胜反弹的团队被授予点，并提供球开始下一个反弹行情。一些最常见的故障包括：  导致球接触地面或地板上的对手的法庭外或不先越过网; 捕捉和投掷球; 双重打击：由同一个球员做球连续两次接触; 由同一支球队取得了球连续四个触点; 净犯规：触摸播放期间净; 脚误：发球时脚越过边界线。 球通常的玩法是将手或手臂，但玩家可以合法地用身体的任何部位罢工或推（短时间接触）球。  许多一致的技术在排球的演变，包括扣球和拦网（因为这些戏剧上方网的顶部做，纵跳是一个运动技能在这项运动强调），以及传球，设置和专用播放位置和攻防结构。</string>
     <string name="name">超级计分器</string>
+    <string name="login">登录</string>
+    <string name="logout">注销</string>
+    <string name="login_email">请输入邮箱</string>
+    <string name="sign_up">注册</string>
+    <string name="password_forget">忘记密码</string>
+    <string name="quit">退出</string>
+    <string name="password">密码</string>
+    <string name="auth_fail">用户名或密码错误</string>
+    <string name="re_password">再次输入密码</string>
+    <string name="invalid_email">邮箱地址错误</string>
+    <string name="invalid_password">两次输入的密码不同</string>
+    <string name="net_error">网络错误</string>
+    <string name="reguster_success">注册成功</string>
+    <string name="signout_success">成功注销</string>
+    <string name="auth_success">成功登陆</string>
+    <string name="wait_login">正在登录</string>
+    <string name="please_wait">请稍等...</string>
 
 </resources>
